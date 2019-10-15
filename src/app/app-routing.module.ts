@@ -5,7 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule)
+    loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule),
+    pathMatch: 'full'
   },
   {
     path: 'boardgames',
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'library-science',
     loadChildren: () => import('./library-science/library-science.module').then(m => m.LibraryScienceModule)
+  },
+  {
+    path: 'personal',
+    loadChildren: () => import('./personal/personal.module').then(m => m.PersonalModule)
   }
 ];
 
