@@ -1,12 +1,21 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule, InjectionToken, Component } from '@angular/core';
+import { Routes, RouterModule, ActivatedRouteSnapshot } from '@angular/router';
+import { RedirectionMessageComponent } from './shared/redirection-message/redirection-message.component';
 
+const externalUrlProvider = new InjectionToken('externalUrlRedirectResolver');
 
 const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./homepage/homepage.module').then(m => m.HomepageModule),
     pathMatch: 'full'
+  },
+  {
+    path: 'externalRedirect',
+    resolve: {
+        url: externalUrlProvider
+    },
+    component: RedirectionMessageComponent
   },
   {
     path: 'boardgames',
@@ -27,6 +36,15 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  providers: [
+    {
+        provide: externalUrlProvider,
+        useValue: (route: ActivatedRouteSnapshot) => {
+            const externalUrl = route.paramMap.get('externalUrl');
+            window.open(externalUrl, '_self');
+        },
+    },
+  ],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

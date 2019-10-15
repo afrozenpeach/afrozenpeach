@@ -8,7 +8,7 @@ export interface Section {
 
 export interface Button {
     text: string,
-    clickEvent: string
+    clickUrl: string
 }
 
 export const Sections: Section[] = [
@@ -20,7 +20,7 @@ export const Sections: Section[] = [
         buttons: [
             {
                 text: 'Read',
-                clickEvent: 'location.href="https://mattie.lgbt"'
+                clickUrl: 'https://mattie.lgbt'
             }
         ]
     },
@@ -32,19 +32,19 @@ export const Sections: Section[] = [
         buttons: [
             {
                 text: 'Walking Doggos',
-                clickEvent: 'location.href="https://walkingdoggos.com"'
+                clickUrl: 'https://walkingdoggos.com'
             },
             {
                 text: 'White Hat: Capture the Flag',
-                clickEvent: 'location.href="https://whitehatctf.com"'
+                clickUrl: 'https://whitehatctf.com'
             },
             {
                 text: 'The Rules Lawyer',
-                clickEvent: 'location.href="https://theruleslawyer.com"'
+                clickUrl: 'https://theruleslawyer.com'
             },
             {
                 text: 'Geekway to the West',
-                clickEvent: 'location.href="https://geekwaytothewest.com"'
+                clickUrl: 'https://geekwaytothewest.com'
             }
         ]
     },
@@ -56,7 +56,7 @@ export const Sections: Section[] = [
         buttons: [
             {
                 text: 'GitHub',
-                clickEvent: 'location.href="https://github.com/afrozenpeach"'
+                clickUrl: 'https://github.com/afrozenpeach'
             }
         ]
     }

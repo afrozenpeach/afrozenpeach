@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Section } from '../homepage.types';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-section',
@@ -10,9 +11,16 @@ export class SectionComponent implements OnInit {
 
   @Input() section: Section | undefined;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  redirect(url: string) {
+    this.router.navigate(['/externalRedirect', { externalUrl: url }], {
+      skipLocationChange: true,
+    });
+    
+    event.preventDefault();
+  }
 }
