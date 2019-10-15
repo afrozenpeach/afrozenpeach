@@ -1,13 +1,13 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Personal Blog</mat-card-title>
-        <mat-card-subtitle>mattie.lgbt</mat-card-subtitle>
+        <mat-card-title>{{ section.title }}</mat-card-title>
+        <mat-card-subtitle>{{ section.subtitle }}</mat-card-subtitle>
     </mat-card-header>
-    <img matCardImage src="assets/images/TransMercy.jpg">
+    <img matCardImage src="{{ section.imageUrl }}">
     <mat-card-content>
-        My personal blog where I write a lot about being transgender in the Midwest
+        {{ section.content }}
     </mat-card-content>
     <mat-card-actions align="start">
-        <button mat-button onclick="location.href='https://mattie.lgbt'">Read</button>        
+        <button mat-button *ngFor="let b of section.buttons" (click)="b.clickEvent">{{ b.text }}</button>        
     </mat-card-actions>
 </mat-card>
