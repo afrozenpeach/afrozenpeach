@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Blog } from '../personal.types';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+  @Input() blog: Blog | undefined;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  redirect(url: string) {
+    if (url.startsWith("http")) {
+      this.router.navigate(['/externalRedirect', { externalUrl: url }], {
+        skipLocationChange: true,
+      });
+    } else {
+      this.router.navigate([url]);
+    }
+    
+    event.preventDefault();
   }
 
 }

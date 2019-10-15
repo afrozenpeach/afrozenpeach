@@ -1,0 +1,27 @@
+fa-icon {
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #3f51b5;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: pink;
+}
+
+.blogContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+}
+
+.blog {
+    min-width: 200px;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 20%;
+}

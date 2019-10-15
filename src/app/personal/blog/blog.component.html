@@ -1,1 +1,13 @@
-<p>blog works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ blog.title }}</mat-card-title>
+        <mat-card-subtitle>{{ blog.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="cardImage" matCardImage src="{{ blog.imageUrl }}">
+    <mat-card-content>
+        {{ blog.content }}
+    </mat-card-content>
+    <mat-card-actions align="start">
+        <button mat-button *ngFor="let b of blog.buttons" (click)="redirect(b.clickUrl)">{{ b.text }}</button>        
+    </mat-card-actions>
+</mat-card>
