@@ -17,9 +17,13 @@ export class SectionComponent implements OnInit {
   }
 
   redirect(url: string) {
-    this.router.navigate(['/externalRedirect', { externalUrl: url }], {
-      skipLocationChange: true,
-    });
+    if (url.startsWith("http")) {
+      this.router.navigate(['/externalRedirect', { externalUrl: url }], {
+        skipLocationChange: true,
+      });
+    } else {
+      this.router.navigate([url]);
+    }
     
     event.preventDefault();
   }

@@ -26,37 +26,25 @@ export const Sections: Section[] = [
     },
     {
         title: 'Board Games',
-        subtitle: 'Walking Doggos and White Hat: CTF ',
+        subtitle: 'Design and Conventions ',
         imageUrl: 'assets/images/WhiteHat.jpg',
         content: 'I design board games, write about board games, and help run Geekway to the West',
         buttons: [
             {
-                text: 'Walking Doggos',
-                clickUrl: 'https://walkingdoggos.com'
-            },
-            {
-                text: 'White Hat: Capture the Flag',
-                clickUrl: 'https://whitehatctf.com'
-            },
-            {
-                text: 'The Rules Lawyer',
-                clickUrl: 'https://theruleslawyer.com'
-            },
-            {
-                text: 'Geekway to the West',
-                clickUrl: 'https://geekwaytothewest.com'
+                text: 'Find out more',
+                clickUrl: 'boardgames'
             }
         ]
     },
     {
         title: 'Development',
         subtitle: 'C++, C#, PHP, JavaScript, Angular',
-        imageUrl: '',
-        content: 'I write code and release them as open source projects',
+        imageUrl: 'assets/images/Code.jpg',
+        content: 'I have several open source projects available on my GitHub',
         buttons: [
             {
-                text: 'GitHub',
-                clickUrl: 'https://github.com/afrozenpeach'
+                text: 'Development Projects',
+                clickUrl: 'development'
             }
         ]
     }
