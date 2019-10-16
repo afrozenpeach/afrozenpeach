@@ -1,3 +1,20 @@
+<div>
+    <mat-card class="blog">
+        <mat-card-header>
+            <mat-card-title>Geekway to the West</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>        
+            <img class="floatLeft padme" src="assets/images/geekwaylogo.png">
+            <p>I help run the annual Geekway to the West board game convention at the St. Charles Convention Center as well as Geekway Mini at Westport Plaza in St. Louis.</p>
+            <p>Primarily my job is to manage the website, but I also help with other various tasks.</p>
+            <div class="clear"></div>
+        </mat-card-content>
+        <mat-card-actions align="start">
+            <button mat-button (click)="redirect('https://geekwaytothewest.com')">Find out more</button>        
+        </mat-card-actions>
+    </mat-card>
+</div>
+
 <div class="gameContainer">
     <app-game class="game" *ngFor="let g of games" [game]="g"></app-game>
 </div>
