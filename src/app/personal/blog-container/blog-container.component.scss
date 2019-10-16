@@ -25,3 +25,13 @@ a:hover {
     flex-grow: 1;
     flex-basis: 20%;
 }
+
+.cardImage {
+    max-height: 200px;
+    width: auto;
+    padding: 20px;
+}
+
+.floatLeft {
+    float: left;
+}
