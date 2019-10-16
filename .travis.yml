@@ -21,3 +21,16 @@ install:
 
 script:
   - ng build --prod
+before_install:
+  - openssl aes-256-cbc -K $encrypted_<...>_key -iv $encrypted_<...>_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 /tmp/deploy_rsa
+  - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - ssh-add /tmp/deploy_rsa
+  - ssh -i ./deploy_key mattie@host.lgbt pwd
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/afrozenpeach/dist/afrozenpeach mattie@<deploy-host>:~/wwwhome/frozenpeach.net/
+  on:
+    branch: master
