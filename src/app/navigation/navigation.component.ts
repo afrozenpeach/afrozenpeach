@@ -3,7 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faTwitter, faFacebookSquare, faWordpress, faTumblr } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFacebookSquare, faWordpress, faTumblr, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'app-navigation',
@@ -17,6 +17,7 @@ export class NavigationComponent {
   faEnvelope = faEnvelope;
   faWordpress = faWordpress;
   faTumblr = faTumblr;
+  faGithub = faGithub;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
