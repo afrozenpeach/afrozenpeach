@@ -40,10 +40,10 @@ export const Sections: Section[] = [
         title: 'Development',
         subtitle: 'C++, C#, PHP, JavaScript, Angular',
         imageUrl: 'assets/images/Code.jpg',
-        content: 'I have several open source projects available on my GitHub',
+        content: 'I have many open source projects available on my GitHub, from demos to board game IRC bots to library science applications.',
         buttons: [
             {
-                text: 'Development Projects',
+                text: 'Find out more',
                 clickUrl: 'development'
             }
         ]
