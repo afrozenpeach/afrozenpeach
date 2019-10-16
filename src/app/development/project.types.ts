@@ -35,7 +35,7 @@ export const Projects: Project[] = [
         buttons: [
             {
                 text: 'Download',
-                clickUrl: '/dndcharsheet/CharSheet.zip'
+                clickUrl: 'https://frozenpeach.net/dndcharsheet/CharSheet.zip'
             }
         ]
     },
