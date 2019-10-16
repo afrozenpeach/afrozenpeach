@@ -12,7 +12,7 @@ addons:
     packages:
       - google-chrome-stableaddons:
   ssh_known_hosts:
-  - host.lgbt
+    - host.lgbt
 
 cache:
   directories:
