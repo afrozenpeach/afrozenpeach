@@ -33,6 +33,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/afrozenpeach/dist/afrozenpeach mattie@<deploy-host>:~/wwwhome/frozenpeach.net/
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/afrozenpeach/dist/afrozenpeach mattie@host.lgbt:~/wwwhome/frozenpeach.net/
   on:
     branch: master
