@@ -1,0 +1,13 @@
+.gameContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: center;
+}
+
+.game {
+    min-width: 200px;
+    margin: 10px;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
