@@ -1,1 +1,14 @@
-<p>project works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{ project.title }}</mat-card-title>
+        <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <img class="cardImage" matCardImage src="{{ project.imageUrl }}">
+    <mat-card-content>
+        {{ project.content }}<br/><br/>
+        <span style="font-weight: bold;">Status:</span> {{ project.status}}
+    </mat-card-content>
+    <mat-card-actions align="start">
+        <button mat-button *ngFor="let b of project.buttons" (click)="redirect(b.clickUrl)">{{ b.text }}</button>        
+    </mat-card-actions>
+</mat-card>

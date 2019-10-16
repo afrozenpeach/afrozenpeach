@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProjectComponent } from './project/project.component';
 import { ProjectContainerComponent } from './project-container/project-container.component';
 import { Routes, RouterModule } from '@angular/router';
+import { MatCardModule, MatButtonModule } from '@angular/material';
 
 
 const developmentRoutes: Routes = [
@@ -13,6 +14,8 @@ const developmentRoutes: Routes = [
   declarations: [ProjectComponent, ProjectContainerComponent],
   imports: [
     CommonModule,
+    MatCardModule,
+    MatButtonModule,
     RouterModule.forChild(developmentRoutes)
   ]
 })

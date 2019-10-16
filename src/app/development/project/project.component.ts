@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { Project } from '../project.types';
 
 @Component({
   selector: 'app-project',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+  @Input() project: Project | undefined;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  redirect(url: string) {
+    if (url.startsWith("http")) {
+      this.router.navigate(['/externalRedirect', { externalUrl: url }], {
+        skipLocationChange: true,
+      });
+    } else {
+      this.router.navigate([url]);
+    }
+    
+    event.preventDefault();
   }
 
 }
