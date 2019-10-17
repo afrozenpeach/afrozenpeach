@@ -23,6 +23,7 @@ install:
   - npm install
 
 script:
+  - npm run test-headless
   - ng build --prod
 before_install:
   - openssl aes-256-cbc -K $encrypted_4f6570bf1a14_key -iv $encrypted_4f6570bf1a14_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d

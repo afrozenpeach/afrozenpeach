@@ -1,14 +1,14 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>{{ game.title }}</mat-card-title>
-        <mat-card-subtitle>{{ game.subtitle }}</mat-card-subtitle>
+        <mat-card-title>{{ game?.title }}</mat-card-title>
+        <mat-card-subtitle>{{ game?.subtitle }}</mat-card-subtitle>
     </mat-card-header>
-    <img class="cardImage" matCardImage src="{{ game.imageUrl }}">
+    <img class="cardImage" matCardImage src="{{ game?.imageUrl }}">
     <mat-card-content>
-        {{ game.content }}<br/><br/>
-        <span style="font-weight: bold;">Status:</span> {{ game.status}}
+        {{ game?.content }}<br/><br/>
+        <span style="font-weight: bold;">Status:</span> {{ game?.status}}
     </mat-card-content>
     <mat-card-actions align="start">
-        <button mat-button *ngFor="let b of game.buttons" (click)="redirect(b.clickUrl)">{{ b.text }}</button>        
+        <button mat-button *ngFor="let b of game?.buttons" (click)="redirect(b.clickUrl)">{{ b.text }}</button>        
     </mat-card-actions>
 </mat-card>
