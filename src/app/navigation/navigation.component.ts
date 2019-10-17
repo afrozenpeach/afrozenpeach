@@ -3,7 +3,7 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons'
-import { faTwitter, faFacebookSquare, faWordpress, faTumblr, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFacebookSquare, faWordpress, faTumblr, faGithub, faPatreon, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { faDice, faCode, faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -23,6 +23,8 @@ export class NavigationComponent {
   faDice = faDice;
   faCode = faCode;
   faHome = faHome;
+  faPatreon = faPatreon;
+  faDiscord = faDiscord;
   
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
