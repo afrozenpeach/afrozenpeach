@@ -1,6 +1,6 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>{{ section.title }}</mat-card-title>
+        <mat-card-title><fa-icon [icon]="section.icon"></fa-icon> {{ section.title }}</mat-card-title>
         <mat-card-subtitle>{{ section.subtitle }}</mat-card-subtitle>
     </mat-card-header>
     <img class="cardImage" matCardImage src="{{ section.imageUrl }}">
