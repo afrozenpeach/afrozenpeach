@@ -9,6 +9,15 @@
       <a mat-list-item href="personal">Personal & Blogs</a>
       <a mat-list-item href="boardgames">Board Games</a>
       <a mat-list-item href="development">Development</a>
+      <span *ngIf="isHandset$ | async">
+        <br/>
+        <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
+        <a href="https://www.facebook.com/frozenpeach"><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a href="https://www.github.com/afrozenpeach"><fa-icon [icon]="faGithub"></fa-icon></a>
+        <a href="https://mattie.lgbt"><fa-icon [icon]="faWordpress"></fa-icon></a>
+        <a href="https://afrozenpeach.tumblr.com/"><fa-icon [icon]="faTumblr"></fa-icon></a>
+        <a href="mailto:mattie@mattie.lgbt"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+      </span>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="rainbow">
@@ -22,7 +31,7 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <span>A Frozen Peach / Mattie Schraeder</span>
-      <span>
+      <span *ngIf="!(isHandset$ | async)">
         <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
         <a href="https://www.facebook.com/frozenpeach"><fa-icon [icon]="faFacebook"></fa-icon></a>
         <a href="https://www.github.com/afrozenpeach"><fa-icon [icon]="faGithub"></fa-icon></a>
