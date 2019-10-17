@@ -12,12 +12,12 @@
       <a mat-list-item href="development"><fa-icon [icon]="faCode"></fa-icon> Development</a>
       <mat-divider></mat-divider>
       <div class="socialMedia" *ngIf="isHandset$ | async">
-        <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
-        <a href="https://www.facebook.com/frozenpeach"><fa-icon [icon]="faFacebook"></fa-icon></a>
-        <a href="https://www.github.com/afrozenpeach"><fa-icon [icon]="faGithub"></fa-icon></a>
-        <a href="https://mattie.lgbt"><fa-icon [icon]="faWordpress"></fa-icon></a>
-        <a href="https://afrozenpeach.tumblr.com/"><fa-icon [icon]="faTumblr"></fa-icon></a>
-        <a href="mailto:mattie@mattie.lgbt"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+        <a href="https://twitter.com/afrozenpeach" matTooltip="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
+        <a href="https://www.facebook.com/frozenpeach" matTooltip="Facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+        <a href="https://www.github.com/afrozenpeach" matTooltip="Github"><fa-icon [icon]="faGithub"></fa-icon></a>
+        <a href="https://mattie.lgbt" matTooltip="Wordpress"><fa-icon [icon]="faWordpress"></fa-icon></a>
+        <a href="https://afrozenpeach.tumblr.com/" matTooltip="Tumblr"><fa-icon [icon]="faTumblr"></fa-icon></a>
+        <a href="mailto:mattie@mattie.lgbt" matTooltip="Email"><fa-icon [icon]="faEnvelope"></fa-icon></a>
       </div>
       <mat-divider *ngIf="isHandset$ | async"></mat-divider>
     </mat-nav-list>
@@ -35,12 +35,12 @@
       <img *ngIf="!(isHandset$ | async)" class="headerIcon" src="assets/images/afrozenpeach.png">
       <span>A Frozen Peach / Mattie Schraeder</span>
       <span class="socialMedia" *ngIf="!(isHandset$ | async)">
-        <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
-        <a href="https://www.facebook.com/frozenpeach"><fa-icon [icon]="faFacebook"></fa-icon></a>
-        <a href="https://www.github.com/afrozenpeach"><fa-icon [icon]="faGithub"></fa-icon></a>
-        <a href="https://mattie.lgbt"><fa-icon [icon]="faWordpress"></fa-icon></a>
-        <a href="https://afrozenpeach.tumblr.com/"><fa-icon [icon]="faTumblr"></fa-icon></a>
-        <a href="mailto:mattie@mattie.lgbt"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+          <a href="https://twitter.com/afrozenpeach" matTooltip="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
+          <a href="https://www.facebook.com/frozenpeach" matTooltip="Facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
+          <a href="https://www.github.com/afrozenpeach" matTooltip="Github"><fa-icon [icon]="faGithub"></fa-icon></a>
+          <a href="https://mattie.lgbt" matTooltip="Wordpress"><fa-icon [icon]="faWordpress"></fa-icon></a>
+          <a href="https://afrozenpeach.tumblr.com/" matTooltip="Tumblr"><fa-icon [icon]="faTumblr"></fa-icon></a>
+          <a href="mailto:mattie@mattie.lgbt" matTooltip="Email"><fa-icon [icon]="faEnvelope"></fa-icon></a>
       </span>
     </mat-toolbar>
     <div class="padContent">
