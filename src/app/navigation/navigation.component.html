@@ -19,7 +19,7 @@
         <a href="https://afrozenpeach.tumblr.com/"><fa-icon [icon]="faTumblr"></fa-icon></a>
         <a href="mailto:mattie@mattie.lgbt"><fa-icon [icon]="faEnvelope"></fa-icon></a>
       </div>
-      <mat-divider></mat-divider>
+      <mat-divider *ngIf="isHandset$ | async"></mat-divider>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="rainbow">
