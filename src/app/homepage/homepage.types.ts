@@ -13,14 +13,14 @@ export interface Button {
 
 export const Sections: Section[] = [
     {
-        title: 'Personal Blog',
-        subtitle: 'mattie.lgbt',
+        title: 'Personal & Blogs',
+        subtitle: 'About me',
         imageUrl: 'assets/images/TransMercy.jpg',
-        content: 'My personal blog where I write a lot about being transgender in the Midwest',
+        content: 'A little about me and the blogs that I infrequently update. Some more infrequently than others.',
         buttons: [
             {
-                text: 'Read',
-                clickUrl: 'https://mattie.lgbt'
+                text: 'Find out more',
+                clickUrl: 'personal'
             }
         ]
     },
