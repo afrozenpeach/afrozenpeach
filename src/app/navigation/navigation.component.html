@@ -30,6 +30,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
+      <img *ngIf="!(isHandset$ | async)" class="headerIcon" src="assets/images/afrozenpeach.png">
       <span>A Frozen Peach / Mattie Schraeder</span>
       <span *ngIf="!(isHandset$ | async)">
         <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
