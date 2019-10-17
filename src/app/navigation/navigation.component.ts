@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons'
 import { faTwitter, faFacebookSquare, faWordpress, faTumblr, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faDice, faCode, faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navigation',
@@ -18,7 +19,11 @@ export class NavigationComponent {
   faWordpress = faWordpress;
   faTumblr = faTumblr;
   faGithub = faGithub;
-
+  faUser = faUser;
+  faDice = faDice;
+  faCode = faCode;
+  faHome = faHome;
+  
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),

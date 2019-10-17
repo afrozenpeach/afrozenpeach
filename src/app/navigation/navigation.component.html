@@ -6,22 +6,20 @@
     <mat-toolbar>Menu</mat-toolbar>
     <mat-divider></mat-divider>
     <mat-nav-list>
-      <a mat-list-item href="#">Home</a>
-      <a mat-list-item href="personal">Personal & Blogs</a>
-      <a mat-list-item href="boardgames">Board Games</a>
-      <a mat-list-item href="development">Development</a>
+      <a mat-list-item href="#"><fa-icon [icon]="faHome"></fa-icon> Home</a>
+      <a mat-list-item href="personal"><fa-icon [icon]="faUser"></fa-icon> Personal & Blogs</a>
+      <a mat-list-item href="boardgames"><fa-icon [icon]="faDice"></fa-icon> Board Games</a>
+      <a mat-list-item href="development"><fa-icon [icon]="faCode"></fa-icon> Development</a>
       <mat-divider></mat-divider>
-      <span class="socialMedia" *ngIf="isHandset$ | async">
-        <br/>
+      <div class="socialMedia" *ngIf="isHandset$ | async">
         <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
         <a href="https://www.facebook.com/frozenpeach"><fa-icon [icon]="faFacebook"></fa-icon></a>
         <a href="https://www.github.com/afrozenpeach"><fa-icon [icon]="faGithub"></fa-icon></a>
         <a href="https://mattie.lgbt"><fa-icon [icon]="faWordpress"></fa-icon></a>
         <a href="https://afrozenpeach.tumblr.com/"><fa-icon [icon]="faTumblr"></fa-icon></a>
         <a href="mailto:mattie@mattie.lgbt"><fa-icon [icon]="faEnvelope"></fa-icon></a>
-        <br/><br/>
-        <mat-divider></mat-divider>
-      </span>
+      </div>
+      <mat-divider></mat-divider>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="rainbow">
@@ -36,7 +34,7 @@
       </button>
       <img *ngIf="!(isHandset$ | async)" class="headerIcon" src="assets/images/afrozenpeach.png">
       <span>A Frozen Peach / Mattie Schraeder</span>
-      <span *ngIf="!(isHandset$ | async)">
+      <span class="socialMedia" *ngIf="!(isHandset$ | async)">
         <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
         <a href="https://www.facebook.com/frozenpeach"><fa-icon [icon]="faFacebook"></fa-icon></a>
         <a href="https://www.github.com/afrozenpeach"><fa-icon [icon]="faGithub"></fa-icon></a>
