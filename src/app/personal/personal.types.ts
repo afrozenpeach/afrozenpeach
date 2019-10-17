@@ -16,7 +16,7 @@ export const Blogs: Blog[] = [
         title: 'Mattie.LGBT',
         subtitle: 'Being Transgender in the Midwest and the Internet',
         imageUrl: 'assets/images/TransMercy.jpg',
-        content: '',
+        content: 'My most active blog where I write a lot of words about my experiences being transgender, both in real life and online.',
         buttons: [
             {
                 text: 'Read',

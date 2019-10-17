@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faTwitter, faFacebookSquare, faWordpress, faTumblr } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faFacebookSquare, faWordpress, faTumblr, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Blogs, Blog } from '../personal.types';
 
 @Component({
@@ -15,6 +15,7 @@ export class BlogContainerComponent implements OnInit {
   faFacebook = faFacebookSquare;
   faWordpress = faWordpress;
   faTumblr = faTumblr;
+  faGithub = faGithub;
 
   blogs: Blog[] = Blogs;
 
