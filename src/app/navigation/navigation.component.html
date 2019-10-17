@@ -4,12 +4,14 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
+    <mat-divider></mat-divider>
     <mat-nav-list>
       <a mat-list-item href="#">Home</a>
       <a mat-list-item href="personal">Personal & Blogs</a>
       <a mat-list-item href="boardgames">Board Games</a>
       <a mat-list-item href="development">Development</a>
-      <span *ngIf="isHandset$ | async">
+      <mat-divider></mat-divider>
+      <span class="socialMedia" *ngIf="isHandset$ | async">
         <br/>
         <a href="https://twitter.com/afrozenpeach"><fa-icon [icon]="faTwitter"></fa-icon></a>
         <a href="https://www.facebook.com/frozenpeach"><fa-icon [icon]="faFacebook"></fa-icon></a>
