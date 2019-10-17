@@ -21,23 +21,33 @@
 }
 
 fa-icon {
-  padding-left: 10px;
+  padding-right: 10px;
   color: pink;
+
+  &:hover {
+    color: darkblue;
+  }
 }
 
 fa-icon:hover {
-  font-size: 1.5em;
-  color: lightblue;
-}
-
-.socialMedia {
-  padding-left: 10px;
 }
 
 .headerIcon {
   height: 50px;
   width: auto;
   margin-right: 20px;
+}
+
+mat-nav-list fa-icon {
+  color: darkblue;
+
+  &:hover {
+    color: pink;
+  }
+}
+
+.socialMedia {
+  padding: 20px;
 }
 
 .rainbow {
