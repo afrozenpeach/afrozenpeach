@@ -29,7 +29,7 @@ export const Projects: Project[] = [
     {
         title: 'Dungeons and Dragons v3.5 Character Sheet Generator',
         subtitle: 'Written in VisualC++ Builder 5',
-        imageUrl: '',
+        imageUrl: 'assets/dndcharsheet/Page1.png',
         content: 'A digital character sheet for D&D 3.5. Somehow still works after nearly two decades.',
         status: 'Abandoned',
         buttons: [
@@ -42,7 +42,7 @@ export const Projects: Project[] = [
     {
         title: 'A Frozen Peach',
         subtitle: 'Written in Angular 8',
-        imageUrl: '',
+        imageUrl: 'assets/images/afrozenpeach-website.jpg',
         content: 'This website!',
         status: 'Active',
         buttons: [
