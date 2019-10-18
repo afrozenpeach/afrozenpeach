@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card (click)="redirect(section?.buttons[0]?.clickUrl)">
     <mat-card-header>
         <mat-card-title><fa-icon [icon]="section?.icon"></fa-icon> {{ section?.title }}</mat-card-title>
         <mat-card-subtitle>{{ section?.subtitle }}</mat-card-subtitle>

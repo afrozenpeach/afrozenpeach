@@ -19,7 +19,11 @@ export const Games: Game[] = [
         imageUrl: 'assets/images/WalkingDoggosCards.jpg',
         content: 'A silly trick taking game about walking dogs, in which you can\'t see the cards in your and and try to not win tricks.',
         status: 'Self-published',
-        buttons: [
+        buttons: [            
+            {
+                text: 'Find out more',
+                clickUrl: 'https://walkingdoggos.com'
+            },
             {
                 text: 'Buy Now',
                 clickUrl: 'https://walkingdoggos.com/buy-now/'
@@ -35,10 +39,6 @@ export const Games: Game[] = [
             {
                 text: 'Tabletop Simulator',
                 clickUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1701859774'
-            },
-            {
-                text: 'Find out more',
-                clickUrl: 'https://walkingdoggos.com'
             }
         ]
     },
@@ -50,6 +50,10 @@ export const Games: Game[] = [
         status: 'Looking for a publisher',
         buttons: [
             {
+                text: 'Find out more',
+                clickUrl: 'https://whitehatctf.com'
+            },
+            {
                 text: 'Rules',
                 clickUrl: 'http://whitehatctf.com/downloads/WhiteHatCTF.pdf'
             },
@@ -60,10 +64,6 @@ export const Games: Game[] = [
             {
                 text: 'Tabletop Simulator',
                 clickUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1827367585'
-            },
-            {
-                text: 'Find out more',
-                clickUrl: 'https://whitehatctf.com'
             }
         ]
     }

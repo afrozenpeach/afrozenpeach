@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card (click)="redirect(blog?.buttons[0]?.clickUrl)">
     <mat-card-header>
         <mat-card-title>{{ blog?.title }}</mat-card-title>
         <mat-card-subtitle>{{ blog?.subtitle }}</mat-card-subtitle>
