@@ -32,7 +32,7 @@ export const Blogs: Blog[] = [
         buttons: [
             {
                 text: 'Read',
-                clickUrl: 'https://theruleslawyer.com'
+                clickUrl: 'https://theruleslawyer.net'
             }
         ]
     },
