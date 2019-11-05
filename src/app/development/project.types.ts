@@ -40,7 +40,7 @@ export const Projects: Project[] = [
         ]
     },
     {
-        title: 'A Frozen Peach',
+        title: 'A Frozen Peach Website',
         subtitle: 'Written in Angular 8',
         imageUrl: 'assets/images/afrozenpeach-website.jpg',
         content: 'This website!',
@@ -49,6 +49,19 @@ export const Projects: Project[] = [
             {
                 text: 'GitHub Project',
                 clickUrl: 'https://github.com/afrozenpeach/afrozenpeach'
+            }
+        ]
+    },
+    {
+        title: 'Geekway to the West Website',
+        subtitle: 'Written in Angular 8',
+        imageUrl: 'assets/images/geekwaywebsite.png',
+        content: 'The website for the board game convention Geekway to the West. Built with an Angular 8 front end and using a Strapi/GraphQL Headless CMS backend.',
+        status: 'Active',
+        buttons: [
+            {
+                text: 'GitHub Project',
+                clickUrl: 'https://github.com/afrozenpeach/geekway'
             }
         ]
     },
