@@ -4,7 +4,8 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogContainerComponent } from './blog-container/blog-container.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MatCardModule, MatButtonModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 const personalRoutes: Routes = [
   { path: '', component: BlogContainerComponent, pathMatch: 'full' }

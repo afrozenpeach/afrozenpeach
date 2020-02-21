@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ProjectComponent } from './project/project.component';
 import { ProjectContainerComponent } from './project-container/project-container.component';
 import { Routes, RouterModule } from '@angular/router';
-import { MatCardModule, MatButtonModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 
 const developmentRoutes: Routes = [

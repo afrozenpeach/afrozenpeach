@@ -13,7 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RedirectionMessageComponent } from './shared/redirection-message/redirection-message.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MatTooltipModule } from '@angular/material';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
