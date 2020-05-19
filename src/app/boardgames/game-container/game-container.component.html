@@ -1,3 +1,7 @@
+<div class="gameContainer">
+    <app-game class="game" *ngFor="let g of games" [game]="g"></app-game>
+</div>
+
 <div>
     <mat-card>
         <mat-card-header>
@@ -13,8 +17,20 @@
             <button mat-button (click)="redirect('https://geekwaytothewest.com')">Find out more</button>        
         </mat-card-actions>
     </mat-card>
-</div>
 
-<div class="gameContainer">
-    <app-game class="game" *ngFor="let g of games" [game]="g"></app-game>
+    <br/>
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Board Game Broadscast - Season 2 Episode 1</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>        
+            <img class="floatLeft padme" src="assets/images/broadscast.webp">
+            <p>In this episode of Board Game Broadscast, I walk through how to upload and playtest a board game on Tabletop Simulator.</p>
+            <div class="clear"></div>
+        </mat-card-content>
+        <mat-card-actions align="start">
+            <button mat-button (click)="redirect('https://www.youtube.com/watch?v=pMfI1oUwm5w')">Find out more</button>        
+        </mat-card-actions>
+    </mat-card>
 </div>
