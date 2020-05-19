@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "afrozenpeach"
+  "defaultProject": "afrozenpeach",
+  "cli": {
+    "analytics": "e6736c61-8f13-4bbd-a61e-2a577d494408"
+  }
 }
