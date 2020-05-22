@@ -44,22 +44,22 @@ export const Games: Game[] = [
     },
     {
         title: 'White Hat',
-        subtitle: 'Capture the Flag ',
+        subtitle: 'A Hacking Simulator Board Game',
         imageUrl: 'assets/images/WhiteHat.jpg',
-        content: 'An action selection/worker placement style game where you try and patch all the vulnerabilities before your opponents.',
+        content: 'A simultaneous play action selection/worker placement style game where you try and patch all the vulnerabilities before your opponents.',
         status: 'Looking for a publisher',
         buttons: [
             {
                 text: 'Find out more',
-                clickUrl: 'https://whitehatctf.com'
+                clickUrl: 'https://whitehat.games'
             },
             {
                 text: 'Rules',
-                clickUrl: 'http://whitehatctf.com/downloads/WhiteHatCTF.pdf'
+                clickUrl: 'http://whitehat.games/downloads/WhiteHatCTF.pdf'
             },
             {
                 text: 'How to play',
-                clickUrl: 'https://www.youtube.com/watch?v=7LDr68pGVMM'
+                clickUrl: 'https://www.youtube.com/watch?v=3QXYTUcdGcY'
             },
             {
                 text: 'Tabletop Simulator',
