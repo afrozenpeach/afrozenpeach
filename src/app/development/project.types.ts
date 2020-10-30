@@ -96,6 +96,19 @@ export const Projects: Project[] = [
         ]
     },
     {
+        title: 'HimitsuBotsou',
+        subtitle: 'Discord bot for managing characters in a collaborative writing server',
+        imageUrl: '',
+        content: 'Written in Node.JS and connects to a MySQL Database',
+        status: 'Active',
+        buttons: [
+            {
+                text: 'Find out more',
+                clickUrl: 'https://github.com/afrozenpeach/himitsubotsou'
+            }
+        ]
+    },
+    {
         title: 'Phergie IRC Bot - One Night Revolution',
         subtitle: 'Plugin for the Phergie IRC Bot to play One Night Revolution',
         imageUrl: '',
