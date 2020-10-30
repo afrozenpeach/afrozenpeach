@@ -25,20 +25,12 @@ export const Games: Game[] = [
                 clickUrl: 'https://walkingdoggos.com'
             },
             {
-                text: 'Buy Now',
-                clickUrl: 'https://walkingdoggos.com/buy-now/'
-            },
-            {
                 text: 'Rules',
                 clickUrl: 'https://walkingdoggos.com/rules/WalkingDoggos-MintTin.pdf'
             },
             {
                 text: 'How to play',
                 clickUrl: 'https://www.youtube.com/watch?v=ppk82cpz2mc'
-            },
-            {
-                text: 'Tabletop Simulator',
-                clickUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1701859774'
             }
         ]
     },
