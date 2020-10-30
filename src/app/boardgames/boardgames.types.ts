@@ -18,8 +18,8 @@ export const Games: Game[] = [
         subtitle: 'A Game of Being Barely Adequate',
         imageUrl: 'assets/images/WalkingDoggosCards.jpg',
         content: 'A silly trick taking game about walking dogs, in which you can\'t see the cards in your and and try to not win tricks.',
-        status: 'Self-published',
-        buttons: [            
+        status: 'Self-published - discontinued',
+        buttons: [
             {
                 text: 'Find out more',
                 clickUrl: 'https://walkingdoggos.com'
@@ -40,6 +40,16 @@ export const Games: Game[] = [
                 text: 'Tabletop Simulator',
                 clickUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1701859774'
             }
+        ]
+    },
+    {
+        title: 'Heckin Hounds',
+        subtitle: 'Walking Doggos for Hades',
+        imageUrl: 'assets/images/HeckinHounds.jpg',
+        content: 'A silly trick taking game about walking dogs, in which you can\'t see the cards in your and and try to not win tricks.',
+        status: 'Signed with Sapphire City Games - Kickstarter coming in 2021',
+        buttons: [
+
         ]
     },
     {
