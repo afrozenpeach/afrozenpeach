@@ -109,6 +109,27 @@ export const Projects: Project[] = [
         ]
     },
     {
+        title: 'Himitsu Companion Website',
+        subtitle: 'A companion website for HimitsuBotsou',
+        imageUrl: '',
+        content: 'Written in Angular and connects to a Node.js backend, which connects to MySQL',
+        status: 'Active',
+        buttons: [
+            {
+                text: 'Live Site',
+                clickUrl: 'https://franel.net'
+            },
+            {
+                text: 'Front End',
+                clickUrl: 'https://github.com/afrozenpeach/HimitsuFrontend'
+            },
+            {
+                text: 'Back End',
+                clickUrl: 'https://github.com/afrozenpeach/HimitsuBackend'
+            }
+        ]
+    },
+    {
         title: 'Phergie IRC Bot - One Night Revolution',
         subtitle: 'Plugin for the Phergie IRC Bot to play One Night Revolution',
         imageUrl: '',
