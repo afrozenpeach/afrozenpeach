@@ -99,7 +99,7 @@ export const Projects: Project[] = [
         title: 'HimitsuBotsou',
         subtitle: 'Discord bot for managing characters in a collaborative writing server',
         imageUrl: '',
-        content: 'Written in Node.JS and connects to a MySQL Database',
+        content: 'Written in Node.JS and connects to a MySQL Database. Also runs the backend API for the Himitsu Companion Website.',
         status: 'Active',
         buttons: [
             {
@@ -122,10 +122,6 @@ export const Projects: Project[] = [
             {
                 text: 'Front End',
                 clickUrl: 'https://github.com/afrozenpeach/HimitsuFrontend'
-            },
-            {
-                text: 'Back End',
-                clickUrl: 'https://github.com/afrozenpeach/HimitsuBackend'
             }
         ]
     },
