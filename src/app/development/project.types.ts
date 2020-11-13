@@ -31,11 +31,15 @@ export const Projects: Project[] = [
         subtitle: 'Written in VisualC++ Builder 5',
         imageUrl: 'assets/dndcharsheet/Page1.png',
         content: 'A digital character sheet for D&D 3.5. Somehow still works after nearly two decades.',
-        status: 'Abandoned',
+        status: 'Abandoned (but now with less dead naming)',
         buttons: [
             {
                 text: 'Download',
                 clickUrl: 'https://frozenpeach.net/assets/dndcharsheet/CharSheet.zip'
+            },
+            {
+                text: 'Source Code',
+                clickUrl: 'https://frozenpeach.net/assets/dndcharsheet/CharSheetSource3.2020.zip'
             }
         ]
     },
