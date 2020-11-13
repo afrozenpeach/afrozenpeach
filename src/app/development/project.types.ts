@@ -38,8 +38,8 @@ export const Projects: Project[] = [
                 clickUrl: 'https://frozenpeach.net/assets/dndcharsheet/CharSheet.zip'
             },
             {
-                text: 'Source Code',
-                clickUrl: 'https://frozenpeach.net/assets/dndcharsheet/CharSheetSource3.2020.zip'
+                text: 'Github',
+                clickUrl: 'https://github.com/afrozenpeach/charsheet'
             }
         ]
     },
