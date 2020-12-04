@@ -1,6 +1,6 @@
 <mat-card (click)="redirect(section?.buttons[0]?.clickUrl)">
     <mat-card-header>
-        <mat-card-title><fa-icon [icon]="section?.icon"></fa-icon> {{ section?.title }}</mat-card-title>
+        <mat-card-title><fa-icon *ngIf="section?.icon" [icon]="section?.icon"></fa-icon>{{ section?.title }}</mat-card-title>
         <mat-card-subtitle>{{ section?.subtitle }}</mat-card-subtitle>
     </mat-card-header>
     <img class="cardImage" matCardImage src="{{ section?.imageUrl }}">
@@ -8,6 +8,6 @@
         {{ section?.content }}
     </mat-card-content>
     <mat-card-actions align="start">
-        <button mat-button *ngFor="let b of section?.buttons" (click)="redirect(b.clickUrl)">{{ b.text }}</button>        
+        <button mat-button *ngFor="let b of section?.buttons" (click)="redirect(b.clickUrl)">{{ b.text }}</button>
     </mat-card-actions>
 </mat-card>

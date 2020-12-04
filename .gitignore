@@ -46,3 +46,4 @@ testem.log
 Thumbs.db
 deploy_rsa
 deploy_rsa.pub
+debug.log

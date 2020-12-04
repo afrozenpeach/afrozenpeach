@@ -3,17 +3,17 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faDice, faCode } from '@fortawesome/free-solid-svg-icons';
 
 export interface Section {
-    title: string,
-    subtitle: string,
-    imageUrl: string,
-    content: string
-    icon: IconDefinition
-    buttons: Button[]
+    title: string;
+    subtitle: string;
+    imageUrl: string;
+    content: string;
+    icon: IconDefinition;
+    buttons: Button[];
 }
 
 export interface Button {
-    text: string,
-    clickUrl: string
+    text: string;
+    clickUrl: string;
 }
 
 export const Sections: Section[] = [

@@ -1,15 +1,15 @@
 export interface Project {
-    title: string,
-    subtitle: string,
-    imageUrl: string,
-    content: string,
-    status: string,
-    buttons: Button[]
+    title: string;
+    subtitle: string;
+    imageUrl: string;
+    content: string;
+    status: string;
+    buttons: Button[];
 }
 
 export interface Button {
-    text: string,
-    clickUrl: string
+    text: string;
+    clickUrl: string;
 }
 
 export const Projects: Project[] = [
