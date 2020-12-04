@@ -1,4 +1,4 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faDice, faCode } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,7 +16,7 @@ export interface Button {
     clickUrl: string;
 }
 
-export const Sections: Section[] = [
+export const sections: Section[] = [
     {
         title: 'Personal & Blogs',
         subtitle: 'About me',
@@ -47,7 +47,8 @@ export const Sections: Section[] = [
         title: 'Development',
         subtitle: 'C++, C#, PHP, JavaScript, Angular',
         imageUrl: 'assets/images/Code.jpg',
-        content: 'I have many open source projects available on my GitHub, from demos to board game IRC bots to library science applications.',
+        content: `I have many open source projects available on my GitHub,
+            from demos to board game IRC bots to library science applications.`,
         icon: faCode,
         buttons: [
             {
@@ -56,4 +57,4 @@ export const Sections: Section[] = [
             }
         ]
     }
-]
+];

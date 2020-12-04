@@ -9,7 +9,7 @@ import { MatCardModule } from '@angular/material/card';
 
 const developmentRoutes: Routes = [
   { path: '', component: ProjectContainerComponent, pathMatch: 'full' }
-]
+];
 
 @NgModule({
   declarations: [ProjectComponent, ProjectContainerComponent],

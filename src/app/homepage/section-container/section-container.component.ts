@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Section, Sections } from '../homepage.types';
+import { Section, sections } from '../homepage.types';
 
 @Component({
   selector: 'app-section-container',
@@ -8,7 +8,7 @@ import { Section, Sections } from '../homepage.types';
 })
 export class SectionContainerComponent implements OnInit {
 
-  sections: Section[] = Sections;
+  sections: Section[] = sections;
 
   constructor() { }
 

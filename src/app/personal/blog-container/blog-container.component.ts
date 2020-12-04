@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faTwitter, faFacebookSquare, faWordpress, faTumblr, faGithub, faDiscord, faPatreon } from '@fortawesome/free-brands-svg-icons'
-import { Blogs, Blog } from '../personal.types';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faTwitter, faFacebookSquare, faWordpress, faTumblr, faGithub, faDiscord, faPatreon } from '@fortawesome/free-brands-svg-icons';
+import { blogs, Blog } from '../personal.types';
 
 @Component({
   selector: 'app-blog-container',
@@ -19,7 +19,7 @@ export class BlogContainerComponent implements OnInit {
   faPatreon = faPatreon;
   faGithub = faGithub;
 
-  blogs: Blog[] = Blogs;
+  blogs: Blog[] = blogs;
 
   constructor() { }
 

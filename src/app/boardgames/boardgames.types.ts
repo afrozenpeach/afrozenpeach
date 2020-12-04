@@ -12,7 +12,7 @@ export interface Button {
     clickUrl: string;
 }
 
-export const Games: Game[] = [
+export const games: Game[] = [
     {
         title: 'Walking Doggos',
         subtitle: 'A Game of Being Barely Adequate',
@@ -48,7 +48,8 @@ export const Games: Game[] = [
         title: 'White Hat',
         subtitle: 'A Hacking Simulator Board Game',
         imageUrl: 'assets/images/WhiteHat.jpg',
-        content: 'A simultaneous play action selection/worker placement style game where you try and patch all the vulnerabilities before your opponents.',
+        content: `A simultaneous play action selection/worker placement style game where you
+                    try and patch all the vulnerabilities before your opponents.`,
         status: 'Looking for a publisher',
         buttons: [
             {
@@ -69,4 +70,4 @@ export const Games: Game[] = [
             }
         ]
     }
-]
+];

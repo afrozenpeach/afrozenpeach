@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Project, Projects } from '../project.types';
+import { Project, projects } from '../project.types';
 
 @Component({
   selector: 'app-project-container',
@@ -8,7 +8,7 @@ import { Project, Projects } from '../project.types';
 })
 export class ProjectContainerComponent implements OnInit {
 
-  projects: Project[] = Projects;
+  projects: Project[] = projects;
 
   constructor() { }
 

@@ -35,9 +35,9 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <img *ngIf="!(isHandset$ | async)" class="headerIcon" src="assets/images/afrozenpeach.png">
+      <img *ngIf="(isHandset$ | async) === (false || null || undefined)" class="headerIcon" src="assets/images/afrozenpeach.png">
       <span>A Frozen Peach / Mattie Schraeder</span>
-      <span class="socialMedia" *ngIf="!(isHandset$ | async)">
+      <span class="socialMedia" *ngIf="(isHandset$ | async) === (false || null || undefined)">
           <a href="https://twitter.com/afrozenpeach" matTooltip="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
           <a href="https://www.facebook.com/frozenpeach" matTooltip="Facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
           <a href="https://www.github.com/afrozenpeach" matTooltip="Github"><fa-icon [icon]="faGithub"></fa-icon></a>

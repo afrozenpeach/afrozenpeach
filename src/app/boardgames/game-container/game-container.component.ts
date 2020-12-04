@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Games, Game } from '../boardgames.types';
+import { games, Game } from '../boardgames.types';
 
 @Component({
   selector: 'app-game-container',
@@ -9,7 +9,7 @@ import { Games, Game } from '../boardgames.types';
 })
 export class GameContainerComponent implements OnInit {
 
-  games: Game[] = Games;
+  games: Game[] = games;
 
   constructor(private router: Router) { }
 
@@ -17,14 +17,14 @@ export class GameContainerComponent implements OnInit {
   }
 
   redirect(url: string) {
-    if (url.startsWith("http")) {
+    if (url.startsWith('http')) {
       this.router.navigate(['/externalRedirect', { externalUrl: url }], {
         skipLocationChange: true,
       });
     } else {
       this.router.navigate([url]);
     }
-    
+
     event.preventDefault();
   }
 

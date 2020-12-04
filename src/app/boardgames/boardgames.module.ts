@@ -8,7 +8,7 @@ import { MatCardModule } from '@angular/material/card';
 
 const boardgameRoutes: Routes = [
   { path: '', component: GameContainerComponent, pathMatch: 'full' }
-]
+];
 
 @NgModule({
   declarations: [GameComponent, GameContainerComponent],

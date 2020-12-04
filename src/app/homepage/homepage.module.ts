@@ -9,7 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const homepageRoutes: Routes = [
   { path: '', component: SectionContainerComponent, pathMatch: 'full' }
-]
+];
 
 @NgModule({
   declarations: [

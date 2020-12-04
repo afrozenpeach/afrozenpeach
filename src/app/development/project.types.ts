@@ -12,7 +12,7 @@ export interface Button {
     clickUrl: string;
 }
 
-export const Projects: Project[] = [
+export const projects: Project[] = [
     {
         title: 'C# MARC / C# MARC Editor',
         subtitle: 'Written in C#.Net',
@@ -60,7 +60,8 @@ export const Projects: Project[] = [
         title: 'Geekway to the West Website',
         subtitle: 'Written in Angular 8',
         imageUrl: 'assets/images/geekwaywebsite.png',
-        content: 'The website for the board game convention Geekway to the West. Built with an Angular 8 front end and using a Strapi/GraphQL Headless CMS backend.',
+        content: `The website for the board game convention Geekway to the West.
+            Built with an Angular 8 front end and using a Strapi/GraphQL Headless CMS backend.`,
         status: 'Active',
         buttons: [
             {
@@ -73,7 +74,9 @@ export const Projects: Project[] = [
         title: 'Elasticsearch-PHP',
         subtitle: 'Contributed to the Elasticsearch-PHP library',
         imageUrl: '',
-        content: 'Because the host is adding the port, the host header also has the port in it. Instead, the handler should be using CURLOPT_PORT to specify which port is the curl request is being sent on. This also affects unit tests that no longer need to verify that the port is in the host name.',
+        content: `Because the host is adding the port, the host header also has the port in it.
+            Instead, the handler should be using CURLOPT_PORT to specify which port is the curl request is being sent on.
+            This also affects unit tests that no longer need to verify that the port is in the host name.`,
         status: 'Committed to Master',
         buttons: [
             {
@@ -133,7 +136,8 @@ export const Projects: Project[] = [
         title: 'Phergie IRC Bot - One Night Revolution',
         subtitle: 'Plugin for the Phergie IRC Bot to play One Night Revolution',
         imageUrl: '',
-        content: 'I have no idea if this still works, but I haven\'t been on IRC in ages. I really should start making discord bots instead. ',
+        content: `I have no idea if this still works, but I haven\'t been on IRC in ages.
+            I really should start making discord bots instead. `,
         status: 'Abandoned',
         buttons: [
             {
@@ -142,4 +146,4 @@ export const Projects: Project[] = [
             }
         ]
     }
-]
+];

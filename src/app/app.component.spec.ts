@@ -16,9 +16,9 @@ describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule, 
+        RouterTestingModule,
         BrowserAnimationsModule,
-        FontAwesomeModule, 
+        FontAwesomeModule,
         MatToolbarModule,
         MatButtonModule,
         MatSidenavModule,

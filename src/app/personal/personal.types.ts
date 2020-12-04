@@ -11,7 +11,7 @@ export interface Button {
     clickUrl: string;
 }
 
-export const Blogs: Blog[] = [
+export const blogs: Blog[] = [
     {
         title: 'Mattie.LGBT',
         subtitle: 'Being Transgender in the Midwest and the Internet',
@@ -48,4 +48,4 @@ export const Blogs: Blog[] = [
             }
         ]
     }
-]
+];
