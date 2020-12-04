@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ProjectComponent } from './project.component';
 import { MatCardModule } from '@angular/material/card';
@@ -8,7 +8,7 @@ describe('ProjectComponent', () => {
   let component: ProjectComponent;
   let fixture: ComponentFixture<ProjectComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ProjectComponent ],
       imports: [ MatCardModule, RouterTestingModule.withRoutes([]) ]

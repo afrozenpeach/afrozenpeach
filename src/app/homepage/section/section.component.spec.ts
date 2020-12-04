@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SectionComponent } from './section.component';
 import { MatCardModule } from '@angular/material/card';
@@ -9,7 +9,7 @@ describe('SectionComponent', () => {
   let component: SectionComponent;
   let fixture: ComponentFixture<SectionComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SectionComponent ],
       imports: [ MatCardModule, RouterTestingModule.withRoutes([]), FontAwesomeModule ]

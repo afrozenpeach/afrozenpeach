@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GameContainerComponent } from './game-container.component';
 import { MatCardModule } from '@angular/material/card';
@@ -9,7 +9,7 @@ describe('GameContainerComponent', () => {
   let component: GameContainerComponent;
   let fixture: ComponentFixture<GameContainerComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ GameContainerComponent, GameComponent ],
       imports: [ MatCardModule, RouterTestingModule.withRoutes([]) ]

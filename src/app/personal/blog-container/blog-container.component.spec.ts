@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { BlogContainerComponent } from './blog-container.component';
 import { MatCardModule } from '@angular/material/card';
@@ -10,7 +10,7 @@ describe('BlogContainerComponent', () => {
   let component: BlogContainerComponent;
   let fixture: ComponentFixture<BlogContainerComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ BlogContainerComponent, BlogComponent ],
       imports: [ MatCardModule, RouterTestingModule.withRoutes([]), FontAwesomeModule ]
