@@ -1,26 +1,54 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
     <mat-toolbar>Menu</mat-toolbar>
     <mat-divider></mat-divider>
     <mat-nav-list>
       <a mat-list-item href="#"><fa-icon [icon]="faHome"></fa-icon> Home</a>
-      <a mat-list-item href="personal"><fa-icon [icon]="faUser"></fa-icon> Personal & Blogs</a>
-      <a mat-list-item href="boardgames"><fa-icon [icon]="faDice"></fa-icon> Board Games</a>
-      <a mat-list-item href="development"><fa-icon [icon]="faCode"></fa-icon> Development</a>
+      <a mat-list-item href="personal"
+        ><fa-icon [icon]="faUser"></fa-icon> Personal & Blogs</a
+      >
+      <a mat-list-item href="boardgames"
+        ><fa-icon [icon]="faDice"></fa-icon> Board Games</a
+      >
+      <a mat-list-item href="development"
+        ><fa-icon [icon]="faCode"></fa-icon> Development</a
+      >
       <mat-divider></mat-divider>
       <div class="socialMedia" *ngIf="isHandset$ | async">
-        <a href="https://twitter.com/afrozenpeach" matTooltip="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
-        <a href="https://www.facebook.com/frozenpeach" matTooltip="Facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
-        <a href="https://www.github.com/afrozenpeach" matTooltip="Github"><fa-icon [icon]="faGithub"></fa-icon></a>
-        <a href="https://mattie.lgbt" matTooltip="Wordpress"><fa-icon [icon]="faWordpress"></fa-icon></a>
-        <br/><br/>
-        <a href="https://afrozenpeach.tumblr.com/" matTooltip="Tumblr"><fa-icon [icon]="faTumblr"></fa-icon></a>
-        <a href="https://patreon.com/mattieschraeder" matTooltip="Patreon"><fa-icon [icon]="faPatreon"></fa-icon></a>
-        <a href="https://discord.gg/KGWaqvW" matTooltip="Discord: Frozen's Peaches"><fa-icon [icon]="faDiscord"></fa-icon></a>
-        <a href="mailto:mattie@mattie.lgbt" matTooltip="Email"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+        <a href="https://twitter.com/afrozenpeach" matTooltip="Twitter"
+          ><fa-icon [icon]="faTwitter"></fa-icon
+        ></a>
+        <a href="https://www.facebook.com/frozenpeach" matTooltip="Facebook"
+          ><fa-icon [icon]="faFacebook"></fa-icon
+        ></a>
+        <a href="https://www.github.com/afrozenpeach" matTooltip="Github"
+          ><fa-icon [icon]="faGithub"></fa-icon
+        ></a>
+        <a href="https://mattie.lgbt" matTooltip="Wordpress"
+          ><fa-icon [icon]="faWordpress"></fa-icon
+        ></a>
+        <br /><br />
+        <a href="https://afrozenpeach.tumblr.com/" matTooltip="Tumblr"
+          ><fa-icon [icon]="faTumblr"></fa-icon
+        ></a>
+        <a href="https://patreon.com/mattieschraeder" matTooltip="Patreon"
+          ><fa-icon [icon]="faPatreon"></fa-icon
+        ></a>
+        <a
+          href="https://discord.gg/KGWaqvW"
+          matTooltip="Discord: Frozen's Peaches"
+          ><fa-icon [icon]="faDiscord"></fa-icon
+        ></a>
+        <a href="mailto:mattie@mattie.lgbt" matTooltip="Email"
+          ><fa-icon [icon]="faEnvelope"></fa-icon
+        ></a>
       </div>
       <mat-divider *ngIf="isHandset$ | async"></mat-divider>
     </mat-nav-list>
@@ -32,20 +60,43 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        *ngIf="isHandset$ | async"
+      >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <img *ngIf="(isHandset$ | async) === (false || null || undefined)" class="headerIcon" src="assets/images/afrozenpeach.png">
+      <img
+        *ngIf="!(isHandset$ | async)"
+        class="headerIcon"
+        src="assets/images/afrozenpeach.png"
+      />
       <span>A Frozen Peach / Mattie Schraeder</span>
-      <span class="socialMedia" *ngIf="(isHandset$ | async) === (false || null || undefined)">
-          <a href="https://twitter.com/afrozenpeach" matTooltip="Twitter"><fa-icon [icon]="faTwitter"></fa-icon></a>
-          <a href="https://www.facebook.com/frozenpeach" matTooltip="Facebook"><fa-icon [icon]="faFacebook"></fa-icon></a>
-          <a href="https://www.github.com/afrozenpeach" matTooltip="Github"><fa-icon [icon]="faGithub"></fa-icon></a>
-          <a href="https://mattie.lgbt" matTooltip="Wordpress"><fa-icon [icon]="faWordpress"></fa-icon></a>
-          <a href="https://afrozenpeach.tumblr.com/" matTooltip="Tumblr"><fa-icon [icon]="faTumblr"></fa-icon></a>
-          <a href="https://patreon.com/mattieschraeder" matTooltip="Patreon"><fa-icon [icon]="faPatreon"></fa-icon></a>
-          <a href="https://discord.gg/KGWaqvW" matTooltip="Discord: Frozen's Peaches"><fa-icon [icon]="faDiscord"></fa-icon></a>
-          <a href="mailto:mattie@mattie.lgbt" matTooltip="Email"><fa-icon [icon]="faEnvelope"></fa-icon></a>
+      <span class="socialMedia" *ngIf="!(isHandset$ | async)">
+        <a href="https://twitter.com/afrozenpeach" matTooltip="Twitter"
+          ><fa-icon [icon]="faTwitter"></fa-icon
+        ></a>
+        <a href="https://www.facebook.com/frozenpeach" matTooltip="Facebook"
+          ><fa-icon [icon]="faFacebook"></fa-icon
+        ></a>
+        <a href="https://www.github.com/afrozenpeach" matTooltip="Github"
+          ><fa-icon [icon]="faGithub"></fa-icon
+        ></a>
+        <a href="https://mattie.lgbt" matTooltip="Wordpress"
+          ><fa-icon [icon]="faWordpress"></fa-icon
+        ></a>
+        <a href="https://afrozenpeach.tumblr.com/" matTooltip="Tumblr"
+          ><fa-icon [icon]="faTumblr"></fa-icon
+        ></a>
+        <a href="https://patreon.com/mattieschraeder" matTooltip="Patreon"
+          ><fa-icon [icon]="faPatreon"></fa-icon
+        ></a>
+        <a
+          href="https://discord.gg/KGWaqvW"
+          matTooltip="Discord: Frozen's Peaches"
+          ><fa-icon [icon]="faDiscord"></fa-icon
+        ></a>
+        <a href="mailto:mattie@mattie.lgbt" matTooltip="Email"
+          ><fa-icon [icon]="faEnvelope"></fa-icon
+        ></a>
       </span>
     </mat-toolbar>
     <div class="padContent">
