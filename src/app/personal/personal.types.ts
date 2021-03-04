@@ -37,14 +37,14 @@ export const blogs: Blog[] = [
         ]
     },
     {
-        title: 'Walking Doggos Design Diary',
+        title: 'Heckin Hounds Design Diary',
         subtitle: 'A Game of Being Barely Adequate',
-        imageUrl: 'assets/images/WalkingDoggos.jpg',
-        content: 'My thought process about my game, Walking Doggos',
+        imageUrl: 'assets/images/Heckin3.png',
+        content: 'The thought processes behind my game, Heckin Hounds',
         buttons: [
             {
                 text: 'Read',
-                clickUrl: 'https://walkingdoggos.com/blog/'
+                clickUrl: 'https://heckinhounds.com/blog/'
             }
         ]
     }
