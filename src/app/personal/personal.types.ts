@@ -47,17 +47,5 @@ export const blogs: Blog[] = [
                 clickUrl: 'https://theruleslawyer.net'
             }
         ]
-    },
-    {
-        title: 'Heckin Hounds Design Diary',
-        subtitle: 'A Game of Being Barely Adequate',
-        imageUrl: 'assets/images/Heckin3.png',
-        content: 'The thought processes behind my game, Heckin Hounds',
-        buttons: [
-            {
-                text: 'Read',
-                clickUrl: 'https://heckinhounds.com/blog/'
-            }
-        ]
     }
 ];
