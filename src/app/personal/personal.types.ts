@@ -25,6 +25,18 @@ export const blogs: Blog[] = [
         ]
     },
     {
+        title: 'Geek.gay',
+        subtitle: 'A community for LGBT geeks and their allies',
+        imageUrl: 'assets/images/geekgay.jpg',
+        content: 'A community designed from the ground up to allow its members to be themselves while exploring their most geeky obsessions. We strive to be a welcoming environment for 2SLGBTQIA+ individuals, those questioning and exploring their gender and sexuality, and their allies.',
+        buttons: [
+            {
+                text: 'Read',
+                clickUrl: 'https://geek.gay'
+            }
+        ]
+    },
+    {
         title: 'The Rules Lawyer',
         subtitle: 'The art of teaching board games',
         imageUrl: 'assets/images/Dice.jpg',
