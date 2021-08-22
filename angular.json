@@ -82,10 +82,10 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "geekway:build:production"
+              "browserTarget": "afrozenpeach:build:production"
             },
             "development": {
-              "browserTarget": "geekway:build:development"
+              "browserTarget": "afrozenpeach:build:development"
             }
           },
           "defaultConfiguration": "development"
