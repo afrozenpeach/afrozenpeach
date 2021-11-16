@@ -40,15 +40,11 @@ export const games: Game[] = [
             },
             {
                 text: 'Rules',
-                clickUrl: 'http://whitehat.games/downloads/WhiteHatCTF.pdf'
-            },
-            {
-                text: 'How to play',
-                clickUrl: 'https://www.youtube.com/watch?v=3QXYTUcdGcY'
+                clickUrl: 'http://whitehat.games/downloads/WhiteHat.pdf'
             },
             {
                 text: 'Tabletop Simulator',
-                clickUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1827367585'
+                clickUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2606040913'
             }
         ]
     }
