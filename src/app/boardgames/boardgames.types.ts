@@ -27,11 +27,12 @@ export const games: Game[] = [
         ]
     },
     {
-        title: 'White Hat',
+        title: 'blue_team',
         subtitle: 'A Hacking Simulator Board Game',
-        imageUrl: 'assets/images/WhiteHat.jpg',
+        imageUrl: 'assets/images/blue_team-logo.png',
         content: `A simultaneous play action selection/worker placement style game where you
-                    try and patch all the vulnerabilities before your opponents.`,
+                    try and patch vulnerabilities before your opponents and the nefarious
+                    sine_nomine.`,
         status: 'Looking for a publisher',
         buttons: [
             {
@@ -40,7 +41,7 @@ export const games: Game[] = [
             },
             {
                 text: 'Rules',
-                clickUrl: 'http://whitehat.games/downloads/WhiteHat.pdf'
+                clickUrl: 'https://whitehat.games/downloads/blue_team-rules.pdf'
             },
             {
                 text: 'Tabletop Simulator',
