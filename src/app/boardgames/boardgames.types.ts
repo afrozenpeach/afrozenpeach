@@ -18,11 +18,19 @@ export const games: Game[] = [
         subtitle: 'A Game of Being Barely Adequate',
         imageUrl: 'assets/images/Heckin3.png',
         content: 'A silly trick taking game about walking dogs, in which you can\'t see the cards in your and and try to not win tricks.',
-        status: 'Signed with Sapphire City Games - Kickstarter coming in 2021',
+        status: 'Signed with Sapphire City Games - Releasing in 2022',
         buttons: [
             {
                 text: 'Find out more',
                 clickUrl: 'https://heckinhounds.com'
+            },
+            {
+                text: 'Kickstarter',
+                clickUrl: 'https://www.kickstarter.com/projects/527566924/heckin-hounds'
+            },
+            {
+                text: 'Play Now!',
+                clickUrl: 'https://screentop.gg/@afrozenpeach/heckin-hounds'
             }
         ]
     },
@@ -37,15 +45,11 @@ export const games: Game[] = [
         buttons: [
             {
                 text: 'Find out more',
-                clickUrl: 'https://whitehat.games'
+                clickUrl: 'https://blue-team.tech'
             },
             {
                 text: 'Rules',
-                clickUrl: 'https://whitehat.games/downloads/blue_team-rules.pdf'
-            },
-            {
-                text: 'Tabletop Simulator',
-                clickUrl: 'https://steamcommunity.com/sharedfiles/filedetails/?id=2606040913'
+                clickUrl: 'https://blue-team.tech/downloads/blue_team-rules.pdf'
             }
         ]
     }
