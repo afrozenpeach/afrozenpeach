@@ -18,7 +18,7 @@ export const games: Game[] = [
         subtitle: 'A Game of Being Barely Adequate',
         imageUrl: 'assets/images/Heckin3.png',
         content: 'A silly trick taking game about walking dogs, in which you can\'t see the cards in your and and try to not win tricks.',
-        status: 'Signed with Sapphire City Games - Releasing in 2022',
+        status: 'Successful Kickstarter - Releasing in 2022',
         buttons: [
             {
                 text: 'Find out more',
