@@ -52,5 +52,22 @@ export const games: Game[] = [
                 clickUrl: 'https://blue-team.tech/downloads/blue_team-rules.pdf'
             }
         ]
+    },
+    {
+        title: 'Line Go Up',
+        subtitle: 'A Satirical Economic Simulator in the Heckinverse',
+        imageUrl: 'assets/images/line-go-up.png',
+        content: `Sudachi, finally sick of being jealous of his cousin, has created his own
+                    cryptocurrency, and in doing so has gotten the other bad dogs into
+                    cryptocurrency as well. Each dog is now the proud mascot for their own
+                    cryptocurrency and the underworld inhabitants are day trading their hard
+                    earned dog walking money for hopes to score their own windfall.`,
+        status: 'Early prototype',
+        buttons: [
+            {
+                text: 'Find out more',
+                clickUrl: 'https://line-go-up.com'
+            }
+        ]
     }
 ];
