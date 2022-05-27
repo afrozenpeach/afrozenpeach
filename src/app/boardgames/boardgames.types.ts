@@ -62,11 +62,24 @@ export const games: Game[] = [
                     cryptocurrency as well. Each dog is now the proud mascot for their own
                     cryptocurrency and the underworld inhabitants are day trading their hard
                     earned dog walking money for hopes to score their own windfall.`,
-        status: 'Early prototype',
+        status: 'Looking for a publisher',
         buttons: [
             {
                 text: 'Find out more',
                 clickUrl: 'https://line-go-up.com'
+            }
+        ]
+    },
+    {
+        title: 'Oops All Bangers',
+        subtitle: 'A Collaboratively Competitive Playlist Making Card Game',
+        imageUrl: 'assets/images/oopsallbangers.png',
+        content: `Help your friends make the best playlist possible, but be careful because only one person can have the most bangers.`,
+        status: 'Early prototype',
+        buttons: [
+            {
+                text: 'Find out more',
+                clickUrl: 'https://oopsallbangers.com'
             }
         ]
     }
