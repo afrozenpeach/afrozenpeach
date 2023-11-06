@@ -14,6 +14,19 @@ export interface Button {
 
 export const projects: Project[] = [
     {
+        title: 'Geekway to the West - Rules Lawyer',
+        subtitle: 'React/Nest.JS board game library management system',
+        imageUrl: 'assets/images/bgadmin.png',
+        content: 'Manages the Geekway to the West Library and Play and Win collection',
+        status: 'Active',
+        buttons: [
+            {
+                text: 'Find out more',
+                clickUrl: 'https://geekway.com'
+            }
+        ]
+    },
+    {
         title: 'C# MARC / C# MARC Editor',
         subtitle: 'Written in C#.Net',
         imageUrl: 'assets/images/CSharpMarc.png',
