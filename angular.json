@@ -78,14 +78,14 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "afrozenpeach:build"
+            "buildTarget": "afrozenpeach:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "afrozenpeach:build:production"
+              "buildTarget": "afrozenpeach:build:production"
             },
             "development": {
-              "browserTarget": "afrozenpeach:build:development"
+              "buildTarget": "afrozenpeach:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,7 +93,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "afrozenpeach:build"
+            "buildTarget": "afrozenpeach:build"
           }
         },
         "test": {
