@@ -4,8 +4,8 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogContainerComponent } from './blog-container/blog-container.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card';
+import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
+import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
 
 const personalRoutes: Routes = [
   { path: '', component: BlogContainerComponent, pathMatch: 'full' }
