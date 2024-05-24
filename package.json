@@ -7,8 +7,7 @@
     "build": "ng build",
     "test": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -47,8 +46,8 @@
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsdoc": "30.7.6",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsdoc": "48.2.6",
     "eslint-plugin-prefer-arrow": "1.2.2",
     "jasmine-core": "~3.8.0",
     "jasmine-spec-reporter": "~5.0.0",
