@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GameContainerComponent } from './game-container.component';
-import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
+import { MatCardModule } from '@angular/material/card';
 import { GameComponent } from '../game/game.component';
 import { RouterTestingModule } from '@angular/router/testing';
 

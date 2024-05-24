@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ProjectContainerComponent } from './project-container.component';
-import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
+import { MatCardModule } from '@angular/material/card';
 import { ProjectComponent } from '../project/project.component';
 import { RouterTestingModule } from '@angular/router/testing';
 

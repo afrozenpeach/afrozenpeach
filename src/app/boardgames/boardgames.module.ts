@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { GameComponent } from './game/game.component';
 import { Routes, RouterModule } from '@angular/router';
 import { GameContainerComponent } from './game-container/game-container.component';
-import { MatLegacyButtonModule as MatButtonModule } from '@angular/material/legacy-button';
-import { MatLegacyCardModule as MatCardModule } from '@angular/material/legacy-card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 const boardgameRoutes: Routes = [
   { path: '', component: GameContainerComponent, pathMatch: 'full' }
